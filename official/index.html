@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa Dzielnic GTA: San Andreas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mapa Dzielnic GTA: San Andreas</h1>
+      <input
+        type="text"
+        id="search"
+        placeholder="Wpisz nazwę dzielnicy..."
+        oninput="searchDistrict()"
+      />
+      <div id="map"></div>
+    </div>
+
+    <footer class="site-footer">
+      <p><strong>In beta development</strong></p>
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    <script src="js/dzielnice.js"></script>
+  </body>
+</html>
